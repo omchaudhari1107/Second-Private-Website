@@ -5,6 +5,10 @@
 }
 
 /* Create a content of person  */
+::selection {
+    color: white;
+    background: rgb(123, 0, 255);
+  }
 #bg {
 
     background: rgb(255, 0, 232);
