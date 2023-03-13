@@ -1,7 +1,10 @@
 * {
     margin: 0;
 }
-
+::selection {
+    color: white;
+    background: rgb(123, 0, 255);
+  }
 html {
     background: rgb(132, 0, 255);
 }
