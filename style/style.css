@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Create a content of person  */
+::selection {
+    color: white;
+    background: rgb(123, 0, 255);
+}
+
+#bg {
+
+    background: rgb(255, 0, 232);
+    background: linear-gradient(144deg, rgba(255, 0, 232, 1) 0%, rgba(158, 0, 255, 1) 45%, rgba(0, 202, 255, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#cards {
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.left-one {
+    width: auto;
+    height: 10px;
+}
+
+#cards>#person {
+    background-color: rgb(58, 57, 57);
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4);
+    box-decoration-break: slice;
+}
+
+#cards>#person>img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0px 0px 10px 10px rgb(132, 0, 255);
+    display: block;
+    width: 90%;
+    height: 32%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 100%;
+}
+
+#cards #person #logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 10%;
+}
+
+#cards #person #btn {
+    transition-duration: .5s;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(41, 41, 41);
+
+}
+
+#ac {
+    text-decoration: none;
+}
+
+#cards #person #btn:hover {
+    border: 2px solid rgb(123, 123, 123);
+    background-color: transparent;
+
+}
+
+#person #skillbar .bars {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10%;
+
+}
+
+#skillbar #div1 {
+    margin: 0% 10%;
+    border-bottom: white;
+}
+
+#skillbar #div1 #wd {
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10% 0%;
+}
+
+#visitordiv {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+#visitordiv #visitorCount {
+    font-size: 30px;
+    color: rgb(172, 83, 255);
+}
+
+#cards #person .bi {
+    fill: rgb(255, 255, 255);
+    transition-duration: .5s;
+    border-radius: 5px;
+}
+
+#cards #person .bi-linkedin:hover {
+    fill: rgb(63, 63, 255);
+}
+
+#cards #person .bi-github:hover {
+    fill: rgb(132, 0, 255);
+}
+
+/* for detail */
+#cards #detail {
+    margin: 20px;
+    display: block;
+    width: 80%;
+    background-color: rgb(58, 57, 57);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+#cards #detail #name {
+    display: block;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* navigation bar */
+.right-one #content #nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 11px;
+    transition-duration: .5s;
+}
+
+.right-one #content #nav ul li {
+    list-style-type: none;
+    font-size: large;
+    color: white;
+    border-bottom: 2px solid transparent;
+    cursor: default;
+}
+
+.right-one #content #nav ul li a {
+    transition-duration: .5s;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Unbounded', cursive;
+    color: white;
+}
+
+.right-one #content #nav ul li a:hover {
+    color: rgb(154, 154, 154);
+}
+
+/* main content */
+#main-content {
+    margin: 5% 20%;
+}
+
+#main-content #motive {
+    text-align: center;
+    color: white;
+    /* text-align: center; */
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+}
+
+#main-content>#me {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 4%;
+    /* text-align: center;  */
+}
+
+#main-content>#me>#post {
+    font-size: 40px;
+    margin-top: 0%;
+
+}
+
+#main-content>#me>#post>.multiple-filed {
+    /* font-size: 72px; */
+    background: -webkit-linear-gradient(rgb(200, 0, 255), #27c9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* in about */
+#about {
+    margin: 5% 10%;
+}
+
+#about #title {
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 10px 0px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about #txt {
+    font-size: large;
+    color: white;
+    margin-top: 2%;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.bars>.txt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* 
+*
+*
+*
+*
+Responsive content 
+*
+*
+*
+*
+*/
+@media only screen and (max-width:1560px) {
+    #cards>#person>img {
+        width: 80%;
+        height: 25%;
+    }
+}
+
+@media only screen and (max-width:1490px) {
+    #cards>#person>img {
+        width: 80%;
+        height: 20%;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    #cards>#person>img {
+        width: 80%;
+        height: 17%;
+    }
+}
+
+@media only screen and (max-width:1117px) {
+    #cards>#person>img {
+        width: 80%;
+        height: 15%;
+    }
+
+    #cards #person button {
+        padding: 5px 12px;
+    }
+
+    #skillbar #div1 #wd {
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width:1029px) {
+    #cards>#person>img {
+        width: 88%;
+        height: 14%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    #cards {
+        flex-direction: column;
+    }
+
+    #cards #person {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    #cards #person img {
+        width: 40%;
+        height: auto;
+        border-radius: 100%;
+    }
+
+    #cards #person #logo {
+        margin: 2%;
+    }
+
+    #cards #person #btn {
+        padding: 2% 5%;
+        margin: 5% auto;
+    }
+
+    #cards #detail {
+        width: 90%;
+        margin: 3% auto;
+
+    }
+
+    #skillbar #div1 #wd {
+
+        font-size: 20px;
+        margin: 3% 0%;
+    }
+
+    #person #skillbar .bars {
+        margin: 5% auto;
+    }
+}
+
+@media only screen and (max-width:630px) {
+    #main-content #motive {
+
+        font-size: x-large;
+    }
+
+    #main-content>#me {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:545px) {
+    #visitordiv {
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    #visitordiv #visitorCount {
+        font-size: 25px;
+        color: rgb(172, 83, 255);
+    }
+
+    #cards>#person>img {
+        width: 45%;
+    }
+
+    #skillbar #div1 #wd {
+
+        font-size: 15px;
+        margin: 3% 0%;
+    }
+
+    #main-content>#me {
+        font-size: 50px;
+    }
+
+    #main-content>#me>#post {
+        font-size: 30px;
+
+    }
+
+    #main-content #motive {
+
+        font-size: large;
+    }
+
+    #main-content>#me>#post>svg {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width:471px) {
+    #main-content #me {
+        font-size: 40px;
+    }
+
+    #cards>#person>img {
+        width: 40%;
+    }
+
+    #person #skillbar .bars {
+        width: 70%;
+    }
+
+    #main-content #me #post {
+
+        font-size: 25px;
+        margin-top: 2px;
+    }
+}
+@media only screen and (max-width:428px){
+    #visitordiv {
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 17px;
+        color: white;
+        text-align: center;
+    }
+
+    #visitordiv #visitorCount {
+        font-size: 23px;
+        color: rgb(172, 83, 255);
+    }
+}
+@media only screen and (max-width:420px) {
+    .right-one #content #nav ul li {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #visitordiv {
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+    }
+
+    #visitordiv #visitorCount {
+        font-size: 20px;
+        color: rgb(172, 83, 255);
+    }
+    #main-content #me {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    #main-content #me #post {
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    #main-content #me #post svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #about #txt {
+        font-size: 10px;
+    }
+
+    #cards #person #btn {
+        margin: 5% auto;
+    }
+
+    #cards #person #btn #ac {
+        padding: 1px 2px;
+        font-size: 14px;
+    }
+
+    #cards #person .bi {
+        width: 20px;
+        height: 20px;
+    }
+}
